@@ -1,0 +1,18 @@
+<ul> 
+<% @actors.each do |actor| %>
+  <li>
+  <ul>  
+        <li><%= image_tag actor.image_url %></li>
+        <li><h2>Name :<%=actor.name%></h2></h2></li>
+        <li><h2>Bio : <%=actor.bio%></h2></li>
+        <li><h2>Birth_date : <%=actor.birth_date%></h2></li>
+        <li><h2>Birth_place : <%=actor.birth_place%></h2></li>
+        <li><h2>Alive : <%=actor.alive%></h2></li>
+        <%if actor.alive == false%>
+            <li><h2>Death_date : <%=actor.death_date%></h2></li>
+            <li><h2>Death_place : <%=actor.death_place%></h2></li>  
+         <%end%>   
+  </ul>
+  </li>
+<%end%>
+</ul>

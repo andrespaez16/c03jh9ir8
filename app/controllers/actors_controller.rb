@@ -3,7 +3,12 @@ class ActorsController < ApplicationController
 def index
     @actors=Actor.all 
  end
- 
+ def new
+ end
+ def create
+    Actor.create(actor_params)
+redirect_to actors_path 
+end
  private
  
  def actor_params

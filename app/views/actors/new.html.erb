@@ -1,0 +1,13 @@
+<%= form_tag actors_path, method: "post" do %>
+    <ul>
+    <li><h2>Name :</h2><%= text_field :actor, :name %> </li>
+    <li><h2>Bio :</h2> <%= text_field :actor, :bio %> </li>
+    <li><h2>Alive :</h2><%= text_field :actor, :alive %> </li>
+    <li><h2>Birth_date :</h2><%= text_field :actor, :birth_date %> </li>
+    <li><h2>Birth_place :</h2><%= text_field :actor, :birth_place %> </li>
+    <li><h2>Death_place :</h2><%= text_field :actor, :death_place %> </li>
+    <li><h2>Death_date :</h2><%= text_field :actor, :death_date %> </li>
+    <li><h2>Image_url :</h2><%= text_field :actor, :image_url %> </li>
+    <%= submit_tag("Crear Actor") %>
+    </ul>
+  <% end %>

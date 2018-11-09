@@ -54,4 +54,6 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   get "/actors" ,to: "actors#index"
+  get "/actors/new" ,to: "actors#new"
+  post "/actors" ,to: "actors#create"  
 end
